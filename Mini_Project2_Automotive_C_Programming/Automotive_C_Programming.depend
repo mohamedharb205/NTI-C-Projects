@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1697610731 source:e:\nti\c programming\day 3\projects\02\automotive_c_programming\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Automotive_C_Programming.h"
+
+1697625675 e:\nti\c programming\day 3\projects\02\automotive_c_programming\automotive_c_programming.h
+
+1697625452 source:e:\nti\c programming\day 3\projects\02\automotive_c_programming\automotive_c_programming.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

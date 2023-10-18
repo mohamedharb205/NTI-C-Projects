@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1697490191 source:e:\nti\c programming\day 3\projects\library_management_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1697562696 source:e:\nti\c programming\day 3\projects\01\library_management_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1697569158 source:e:\nti\c programming\day 3\projects\01\mini_project1_library_management_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1697574217 source:e:\nti\c programming\day 3\projects\01\mini_project1_library_management_system\library_management_system.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
