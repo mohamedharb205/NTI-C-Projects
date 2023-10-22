@@ -11,7 +11,8 @@ void Print_Library();   // Print all books' name of the library
 void Borrow_Book();     // decrease the number of copies of a specific book
 void Delete_Book();     // delete all information about a specific book
 void Buy_Book();        // add new copies of an existed book
-int Exit();             // Finish the program
+void Clear_CMD();       // Clear the cmd
+void Exit();             // Finish the program
 void Swap(Book* book1 , Book* book2);   // swap to element in the array that contains books to make the empty element at the end of this array
 
 #endif // LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED

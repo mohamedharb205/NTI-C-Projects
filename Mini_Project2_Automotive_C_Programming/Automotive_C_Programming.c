@@ -49,7 +49,8 @@ void Menu()
     printf("\n Welcome to Automotive System! \n");
     printf("1. Turn on the vehicle engine \n");
     printf("2. Turn off the vehicle engine \n");
-    printf("3. Quit the system \n");
+    printf("3. Clear the cmd \n");
+    printf("4. Quit the system \n");
 
     unsigned char choice = "\0";
     printf("\n Enter Choice: \t");
@@ -57,10 +58,11 @@ void Menu()
 
     switch(choice)
     {
-        case '1'  :   Turn_On_Engine();       break;
-        case '2'  :   Turn_Off_Engine();      break;
-        case '3'  :   Exit();                 break;
-        default   :   Menu();                 break;
+        case '1'  :   Turn_On_Engine();             break;
+        case '2'  :   Turn_Off_Engine();            break;
+        case '3'  :    Clear_CMD();     Menu();     break;
+        case '4'  :   Exit();                       break;
+        default   :   Menu();                       break;
     }
 }
 
@@ -73,6 +75,8 @@ void Sensor_Set_Menu()
     printf("3. Set the room temperature (Temperature Sensor) \n");
     printf("4. Set the engine temperature (Engine Temperature Sensor) \n");
     printf("5. Return to the Sensor Set Menu \n");
+    printf("6. Clear the cmd \n");
+
 
     unsigned char choice = "\0";
     printf("\n Enter Choice: \t");
@@ -80,12 +84,13 @@ void Sensor_Set_Menu()
 
     switch(choice)
     {
-        case '1'  :    Turn_Off_Engine();             break;
-        case '2'  :    Set_Traffic_Light_Color();     break;
-        case '3'  :    Set_Room_Temp();               break;
-        case '4'  :    Set_Engine_Temp();             break;
-        case '5'  :    Sensor_Set_Menu();             break;
-        default   :                                   break;
+        case '1'  :    Turn_Off_Engine();                           break;
+        case '2'  :    Set_Traffic_Light_Color();                   break;
+        case '3'  :    Set_Room_Temp();                             break;
+        case '4'  :    Set_Engine_Temp();                           break;
+        case '5'  :    Sensor_Set_Menu();                           break;
+        case '6'  :    Clear_CMD();     Sensor_Set_Menu();          break;
+        default   :                                                 break;
     }
 }
 
@@ -267,10 +272,18 @@ void Display_Vehicle_State()
 }
 
 
-int Exit()
+void Clear_CMD()
 {
-    return 0;
+    system("cls");  // clear the cmd
 }
+
+
+void Exit()
+{
+    //return 0;
+    Exit(EXIT_SUCCESS); //Exit(0);
+}
+
 
 
 

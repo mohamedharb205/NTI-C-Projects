@@ -54,14 +54,15 @@ void Library_Initialization()
 
 void Menu()
 {
-    printf("\n\n Welcome to menu! \n");
+    printf("\nWelcome to menu! \n");
     printf("1. Add_Book \n");
     printf("2. Print_Book \n");
     printf("3. Print_Library \n");
     printf("4. Borrow_Book \n");
     printf("5. Delete_Book \n");
     printf("6. Buy_Book \n");
-    printf("7. Exit \n");
+    printf("7. Clear the cmd \n");
+    printf("8. Exit \n");
 
     unsigned int choice = 0;
     printf("\n Enter Choice: \t");
@@ -69,14 +70,15 @@ void Menu()
 
     switch(choice)
     {
-        case 1  :    Add_Book();        break;
-        case 2  :    Print_Book();      break;
-        case 3  :    Print_Library();   break;
-        case 4  :    Borrow_Book();     break;
-        case 5  :    Delete_Book();     break;
-        case 6  :    Buy_Book();        break;
-        case 7  :    Exit();            break;
-        default :    Menu();            break;
+        case 1  :    Add_Book();                break;
+        case 2  :    Print_Book();              break;
+        case 3  :    Print_Library();           break;
+        case 4  :    Borrow_Book();             break;
+        case 5  :    Delete_Book();             break;
+        case 6  :    Buy_Book();                break;
+        case 7  :    Clear_CMD();   Menu();     break;
+        case 8  :    Exit();                    break;
+        default :    Menu();                    break;
     }
 }
 
@@ -152,7 +154,6 @@ void Add_Book()
 
         }while(try_again == 0);
     }
-
     Menu();
 }
 
@@ -364,9 +365,16 @@ void Delete_Book()
 }
 
 
-int Exit()
+void Clear_CMD()
 {
-    return 0;
+    system("cls");  // clear the cmd
+}
+
+
+void Exit()
+{
+    //return 0;
+    Exit(EXIT_SUCCESS); //Exit(0);
 }
 
 

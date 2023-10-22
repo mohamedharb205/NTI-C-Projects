@@ -16,7 +16,8 @@ void Set_Engine_Temp();
 
 void Display_Vehicle_State();
 
-int Exit();
+void Clear_CMD();
+void Exit();
 
 
 #endif // AUTOMOTIVE_C_PROGRAMMING_H_INCLUDED
